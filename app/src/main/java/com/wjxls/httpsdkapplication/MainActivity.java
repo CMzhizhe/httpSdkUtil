@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tvContent = this.findViewById(R.id.tv_main_content);
 
 
-        WJHttpRequestUtil.getInstance().init(true,"https://microshop.test.meetlan.com/api/");
+        WJHttpRequestUtil.getInstance().init(true,"url地址");
         //这里设置某些必要的参数
         WJHttpRequestUtil.getInstance().setOnWjhttpMustParamatersListener(new WJHttpRequestUtil.OnWjhttpMustParamatersListener() {
             @Override
