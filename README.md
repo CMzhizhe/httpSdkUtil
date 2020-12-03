@@ -2,7 +2,7 @@
 
 #### 1.引入依赖
 ```
-  implementation 'com.wjxls:httputil_android:1.0.0'
+implementation 'com.github.caocao123:httpSdkUtil:v1.0.1@aar'
 ```
 
 
