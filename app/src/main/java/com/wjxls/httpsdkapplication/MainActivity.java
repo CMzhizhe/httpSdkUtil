@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btPost = this.findViewById(R.id.bt_main_post_reqeust);
         tvContent = this.findViewById(R.id.tv_main_content);
 
-
-        WJHttpRequestUtil.getInstance().init(true,"url地址");
+        WJHttpRequestUtil.getInstance().init(true,"");
         //这里设置某些必要的参数
         WJHttpRequestUtil.getInstance().setOnWjhttpMustParamatersListener(new WJHttpRequestUtil.OnWjhttpMustParamatersListener() {
             @Override

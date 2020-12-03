@@ -1,8 +1,6 @@
-plugins {
-    id 'com.android.library'
-}
-
-apply plugin: 'com.novoda.bintray-release'  //添加
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.caocao123'
 
 android {
     compileSdkVersion 29
@@ -11,8 +9,6 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0.0"
-        vectorDrawables.useSupportLibrary = true
-
     }
 
     buildTypes {
@@ -32,18 +28,7 @@ android {
 }
 
 
-publish {
-    repoName="wjkj"//仓库名(repoName 如果没有填写，上传的库默认仓库是maven)
-    userOrg = 'gaoxiaoxiong'      //bintray注册的用户名
-    groupId = 'com.wjxls'     //compile引用时的第1部分groupId
-    artifactId = 'httputil_android'     //compile引用时的第2部分项目名  这里需要对应 wjkj 下面的新的Package Name
-    publishVersion = '1.0.0'    //compile引用时的第3部分版本号
-    desc = ''//d项目描述
-    website = '' //github 托管地址
-}
-
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
     compileOnly 'com.google.code.gson:gson:2.8.5'
 }
 
