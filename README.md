@@ -2,7 +2,7 @@
 
 #### 1.引入依赖
 ```
-implementation 'com.github.caocao123:httpSdkUtil:v1.0.1@aar'
+implementation 'com.github.CMzhizhe:httpSdkUtil:v1.0.1@aar'
 ```
 
 
